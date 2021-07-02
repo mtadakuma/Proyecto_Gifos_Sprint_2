@@ -1,5 +1,5 @@
 const cargarGif = (gif, tipo) =>{
-    let arrGifsFavs = [];
+/*     let arrGifsFavs = [];
     if(localStorage.getItem('favoritos') !== null){
         arrGifsFavs = JSON.parse(localStorage.getItem('favoritos'));
     }
@@ -8,7 +8,7 @@ const cargarGif = (gif, tipo) =>{
     if(localStorage.getItem('misGifos') !== null){
         arrMisGifos = JSON.parse(localStorage.getItem('misGifos'));
     }
-
+ */
     let fig = document.createElement('div');
     let img = document.createElement('img');
     let overlay = document.createElement('div');
@@ -129,7 +129,9 @@ const cargarGif = (gif, tipo) =>{
     imgBtn1.addEventListener('click', changeIconsActive);
 
     imgBtn1.addEventListener('click', ()=>{
+        console.log(arrGifsFavs);
         AltaBajaFavorito(arrGifsFavs, gif);
+        console.log(arrGifsFavs);
     });
 
     imgBtn2.addEventListener('click', ()=>{
