@@ -1,0 +1,135 @@
+:root{
+    --background-body: #572EE5;
+    --background-header:white;
+    --background-nav: rgba(87,46,229,0.90);
+    --background-trending: #F3F5F8;
+    --background-section:white;
+    --background-popup:rgb(255, 255, 255, 0.9);
+    --border-color: #572EE5;
+
+    --color:#fff;
+    --link-underline: #5ED7C6;
+    --color-var1: #572EE5;
+    --color-var2: #000000;
+    --color-var3:#5ED7C6;
+
+    --color-icon: #CDD6E0;
+    --color-icon-hover: #572EE5;
+
+    --box-shadow: 0 2px 4px 1px rgba(156,175,195,0.55);
+}
+
+[dark-theme="dark"]{
+    --background-body: #000000;
+    --background-header: #37383C;
+    --background-nav: #000000;
+    --background-trending: #222326;
+    --background-section:#37383C;
+    --background-popup:rgb(34, 35, 38, 0.9);
+    --border-color: #FFFFFF;
+
+    --color:#FFFFFF;
+    --link-underline: #5ED7C6;
+    --color-var1: #FFFFFF;
+    --color-var2: #FFFFFF;
+    --color-var3:#5ED7C6;
+
+    --color-icon: #9CAFC3;
+    --color-icon-hover: #FFFFFF;
+
+    --box-shadow: 0 2px 4px 1px rgba(156,175,195,0.55);
+}
+
+.popup{
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: var(--background-popup);
+    opacity: 1;
+    z-index: 20;
+}
+
+.popup-card-container-container{
+    width: 80vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.popup-card-container{
+    height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.popup-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.popup-image{
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.popup-button{
+    position:absolute;
+    top: 64px;
+    right: 30px;
+}
+
+.popup-caption-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top: 14px;
+}
+
+.popup-caption{
+    width: 100%;
+    display:flex;
+    text-align:left;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.popup-card-user{
+    margin:0;
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+
+.popup-card-title{
+    margin:0;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--color-var2);
+}
+
+.popup-card-icons{
+    display:flex;
+    justify-content:flex-end;
+    width: 150px;
+}
+
+@media screen and (min-width: 768px){
+    .popup-image{
+        width: 100%;
+        height: auto;
+        width:min-content;
+        object-fit:contain;
+    }
+
+    .popup-button{
+        position:absolute;
+        top: 10vh;
+        right: 25vw;
+    }
+    
+
+}

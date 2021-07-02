@@ -1,0 +1,54 @@
+#favoritos{
+    padding-bottom: 45px;
+}
+
+.favs-container{
+    padding: 0 21px;
+}
+
+.favs{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 156px);
+    justify-content:center;
+    align-items:center;
+    grid-gap: 21px;
+}
+
+.title-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top: 30px;
+}
+
+.subtitulo-2{
+    margin-top: 7px;
+}
+
+@media screen and (min-width: 768px){
+
+    #favoritos{
+        padding-bottom: 78px;
+    }
+    
+    .title-container{
+        padding-top: 20px;
+    }
+
+    .favs-container{
+        padding: 0 70px;
+    }
+
+    .favs{
+        grid-template-columns: repeat(auto-fit, 260px);
+        grid-gap: 20px;
+    }
+
+    .empty-favorites{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    
+}

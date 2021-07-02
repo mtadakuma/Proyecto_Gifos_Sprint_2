@@ -1,0 +1,113 @@
+.camara{
+    height: 100%;
+    width: 100%;
+    transform: scale(0.3,0.3);
+    background:none;
+    display:none;
+}
+
+.camara-svg{
+    margin-top: 100px;
+    position:relative;
+}
+
+.cinta1-svg{
+    position:absolute;
+    left:5px;
+    top: 50px;
+}
+
+.cinta2-svg{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+}
+
+.luz-camara-svg{
+    position:absolute;
+    top: 75px;
+}
+
+.pelicula-svg{
+    display:none;
+    width: 50%;
+    margin-left: 50px;
+}
+
+@keyframes clockwise{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes illuminate{
+    100%{
+        opacity:1;
+    }
+
+    75%{
+        opacity: 0.5;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.5;
+    }
+
+    0%{
+        opacity:1;
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+.cinta1-svg{
+    animation: clockwise 2s infinite steps(60);
+}
+
+.cinta2-svg{
+    animation: clockwise 3s infinite steps(60);
+}
+
+.luz-camara-svg{
+    animation: illuminate 2s infinite steps(60);
+}
+
+.pelicula-svg{
+    animation: shake 5s infinite;
+}
+
+.loader-img{
+    animation: clockwise 1s infinite steps(60);
+}
+
+@media screen and (min-width: 1124px){
+    .camara{
+        display:block;
+        transform: scale(0.5,0.5);
+    }
+
+    .pelicula-svg{
+        display:block;
+        width: 60%;
+    }
+}

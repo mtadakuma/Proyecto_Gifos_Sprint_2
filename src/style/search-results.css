@@ -1,0 +1,32 @@
+
+.search-container{
+    padding: 0 21px;
+}
+
+.search-results{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 156px);
+    justify-content:center;
+    align-items:center;
+    grid-gap: 21px;
+}
+
+@media screen and (min-width: 768px){
+
+    .search-container{
+        padding: 0 70px;
+    }
+
+
+    .search-results{
+        grid-template-columns: repeat(auto-fit, 260px);
+        grid-gap: 20px;
+    }
+
+    .title-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top: 11px;
+    }
+}

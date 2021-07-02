@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/header.css">
+    <link rel="stylesheet" href="./src/style/mis-gifs.css">
+    <link rel="stylesheet" href="./src/style/main.css">
+    <link rel="stylesheet" href="./src/style/footer.css">
+    <link rel="stylesheet" href="./src/style/trending.css">
+    <link rel="stylesheet" href="./src/style/general-gifs.css">
+    <link rel="stylesheet" href="./src/style/popup.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Proyecto GIFos</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./src/img/logo-mobile.svg" alt="Logo" class="logo svg-dark-mode" id='logo-mobile'></a>
+        <a href="./index.html"><img src="./src/img/logo-desktop.svg" alt="Logo version desktop" class="logo-desk svg-dark-mode" id='logo-desktop'></a>
+
+        <input type="checkbox" class="nav-toggle" id="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label" id='nav-toggle-label'>
+            <img src="./src/img/burger.svg" class='nav-hamburger svg-dark-mode' id='burger' alt='burger menu'>
+        </label>
+        <nav>
+            <ul>
+                <li><button class='pointer btn-modo-noc' id='dark-mode-toggle'>Modo Nocturno</button></li>
+                <li><div class='separador'></div></li>
+                <li><a href="./favoritos.html">Favoritos</a></li>
+                <li><div class='separador'></div></li>
+                <li><a href="#"  class='gifos-active'>Mis GIFOS</a></li>
+                <li><div class='separador'></div></li>
+                <li class='crear-gifo'>
+                    <a href="./crear.html">
+                        <img src="./src/img/button-crear-gifo-normal.svg" alt="crear gifo" class='svg-hover svg-dark-mode' id='button-crear-gifo-normal'>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class='title-container'>
+            <img src="./src/img/icon-mis-gifos.svg" alt="icono mis gifos" class='icono-mis-gifos'>
+            <h2 class='subtitulo-2'>Mis GIFOS</h2>
+        </div>
+        <div class='empty-gifos'>
+            <img src="./src/img/icon-mis-gifos-sin-contenido.svg" alt="sin gifos" class='icono-sin-gifos'>
+            <h3 class='subtitulo-3-var1'>¡Anímate a crear tu primer GIFO!</h3>
+        </div>
+        <div id='misGifos'>
+            <div class='gifos-container'>
+                <div class='gifos'>
+                </div>
+            </div>
+            
+            <button class='vermas'><img src="./src/img/CTA-ver-mas-normal.svg" class='svg-dark-mode svg-hover' alt='boton ver mas'></button>
+        </div>
+        <section id='trending'>
+            <h3 class='subtitulo-3'>Trending GIFOS</h3>
+            <p>Mira los últimos GIFOS de nuestra comunidad</p>
+            <div class='contenedor'>
+                <button class='arrow'>
+                    <img src="./src/img/button-slider-left-normal.svg" alt="flecha izquierda" class='svg-dark-mode svg-hover prev' id='button-slider-left-normal'>
+                </button>
+                <div class='ventana-gifs'>
+                    <div class='contenedor-gifs'></div>
+                </div>
+                <button class='arrow'>
+                    <img src="./src/img/button-slider-right-normal.svg" alt="flecha derecha" class='svg-dark-mode svg-hover next' id='button-slider-right-normal'>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class='contact-container-desk'>
+            <p class='footer-p'>Compartir en:</p>
+            <div class="contact-container">
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class='footer-p-c'>© GIFOS 2021 All Rights Reserved.</p>
+    </footer>
+    <script src="./src/js/dark-mode-script.js"></script>
+    <script src="./src/js/shadow-nav-script.js"></script>
+    <script src="./src/js/icons-hover-script.js"></script> 
+    <script src="./src/js/icons-active-script.js"></script> 
+    <script src="./src/js/trending-gifs.js"></script> 
+    <script src="./src/js/cargar-gif.js"></script>
+    <script src="./src/js/alta-baja-favs.js"></script>
+    <script src="./src/js/cargar-misGifos.js"></script>
+    <script src="./src/js/eliminar-gifo.js"></script>
+</body>
+</html>

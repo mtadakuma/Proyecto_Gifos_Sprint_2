@@ -1,0 +1,103 @@
+.card-other{
+    position:relative;
+    margin: 0 auto;
+}
+
+.card-other > img{
+    max-width: 156px;
+    max-height: 120px;
+    width: 357px;
+    height: 275px;
+    object-fit: fill;
+    grid-column: 1/ span 1;
+}
+
+.vermas{
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 78px;
+    margin-bottom: 33px;
+}
+
+@media screen and (min-width: 768px){
+
+    .card-other:hover .overlay {
+        opacity: 1;
+    }
+
+    .card-other > .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+        width: 260px;
+        opacity: 0;
+        background-color:rgba(86, 46, 229, 0.7);
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    .card-other{
+        position:relative;
+        margin: 0 auto;
+    }
+    
+    .card-other > img{
+        max-height: 200px;
+        max-width: 260px;
+        object-fit:cover;
+    }
+
+    .icono-favorito{
+        height: 28px;
+        width: 21px;
+    }
+
+    .title-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top: 11px;
+    }
+
+    .gif-caption, .card-user{
+        text-align:left;
+        color:white;
+    }
+
+    .gif-caption{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    
+    .card-user{
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 15px;
+        margin:0;
+    }
+
+    .subtitulo-6{
+        font-family: 'Roboto';
+        font-size: 16px;
+        margin-top:5px;
+    }
+
+    .card-icons{
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-end;
+    }
+
+    .icon{
+        margin-top: 10px;
+    }
+
+    .vermas{
+        margin-bottom: 0;
+    }
+}

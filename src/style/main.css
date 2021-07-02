@@ -1,0 +1,129 @@
+:root{
+    --background-body: #572EE5;
+    --background-header:white;
+    --background-nav: rgba(87,46,229,0.90);
+    --background-trending: #F3F5F8;
+    --background-section:white;
+    --border-color: #572EE5;
+
+    --color:#fff;
+    --link-underline: #5ED7C6;
+    --color-var1: #572EE5;
+    --color-var2: #000000;
+    --color-var3:#5ED7C6;
+
+    --color-icon: #CDD6E0;
+    --color-icon-hover: #572EE5;
+
+    --box-shadow: 0 2px 4px 1px rgba(156,175,195,0.55);
+}
+
+[dark-theme="dark"]{
+    --background-body: #000000;
+    --background-header: #37383C;
+    --background-nav: #000000;
+    --background-trending: #222326;
+    --background-section:#37383C;
+    --border-color: #FFFFFF;
+
+    --color:#FFFFFF;
+    --link-underline: #5ED7C6;
+    --color-var1: #FFFFFF;
+    --color-var2: #FFFFFF;
+    --color-var3:#5ED7C6;
+
+    --color-icon: #9CAFC3;
+    --color-icon-hover: #FFFFFF;
+
+    --box-shadow: 0 2px 4px 1px rgba(156,175,195,0.55);
+}
+
+main{
+    background-color: var(--background-section);
+    padding-top: 5rem;
+}
+
+.titulo{
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: var(--color-var1);
+    text-align: center;
+    line-height: 33px;
+    width: 70%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.titulo-span{
+    color: var(--color-var3);
+    text-align: center;
+}
+
+#section-inicio{
+    background: var(--background-section);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    padding-bottom: 45px;
+    text-align:center;
+}
+
+#header-img{
+    margin-left: auto;
+    margin-right:auto;
+    width: 70%;
+    max-width: 400px;
+}
+
+.subtitulo-4{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--color-var1);
+    line-height: 25px;
+    margin-bottom:0;
+}
+
+.subtitulo-5{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: var(--color-var1);
+    line-height: 25px;
+    margin-top:0;
+    margin-bottom:0;
+    width: 50%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.subtitulo-3-var1{
+    font-family: 'Montserrat';
+    color: #50E3C2;
+    font-size: 22px;
+    text-align: center;
+}
+
+.search-link{
+    text-decoration:none;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: var(--color-var1);
+    text-align: center;
+    line-height: 25px;
+}
+
+.search-separator{
+    display:inline;
+}
+
+.video-rec{
+    height: 100%;
+    width: 100%;
+    display:none;
+}
+
+@media screen and (min-width: 768px){
+    #section-inicio{
+        padding-bottom: 95px;
+    }
+}
