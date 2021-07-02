@@ -17,8 +17,7 @@ const AltaBajaFavorito = (arr,e) =>{
         if(pos == -1){
             arr.push(e);
         }else{
-            arr.splice(pos,1);
-            location.reload(); 
+            arr.splice(pos,1); 
         }
     }else{
         arr.push(e);
