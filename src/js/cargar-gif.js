@@ -130,7 +130,6 @@ const cargarGif = (gif, tipo) =>{
 
     imgBtn1.addEventListener('click', ()=>{
         AltaBajaFavorito(arrGifsFavs, gif);
-        location.reload();
     });
 
     imgBtn2.addEventListener('click', ()=>{
