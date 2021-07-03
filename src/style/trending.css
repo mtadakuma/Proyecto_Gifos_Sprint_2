@@ -57,12 +57,12 @@
     overflow:auto;
 }
 
-/*Saca la barra para scroll*/
-/*  .ventana-gifs::-webkit-scrollbar
- ,.contenedor-gifs::-webkit-scrollbar {    
+
+.ventana-gifs::-webkit-scrollbar
+,.contenedor-gifs::-webkit-scrollbar {    
     display: none; 
 }
-
+/*
 .ventana-gifs
 ,.contenedor-gifs{
     -ms-overflow-style: none; 
