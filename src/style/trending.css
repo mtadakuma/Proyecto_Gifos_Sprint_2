@@ -58,18 +58,18 @@
 }
 
 /*Saca la barra para scroll*/
- .ventana-gifs::-webkit-scrollbar
+/*  .ventana-gifs::-webkit-scrollbar
  ,.contenedor-gifs::-webkit-scrollbar {    
-    display: none; /* for Chrome, Safari, and Opera */
+    display: none; 
 }
 
 .ventana-gifs
 ,.contenedor-gifs{
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
     overflow-x: scroll; 
-}
-
+} 
+*/
 
  #trending{
     text-align: center;
