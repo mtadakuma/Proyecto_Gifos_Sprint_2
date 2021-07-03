@@ -55,21 +55,15 @@
 .ventana-gifs{
     display:flex;
     overflow:auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
 }
 
 
-.ventana-gifs::-webkit-scrollbar
-,.contenedor-gifs::-webkit-scrollbar {    
+.ventana-gifs::-webkit-scrollbar{    
     display: none; 
 }
-/*
-.ventana-gifs
-,.contenedor-gifs{
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
-    overflow-x: scroll; 
-} 
-*/
+
 
  #trending{
     text-align: center;
