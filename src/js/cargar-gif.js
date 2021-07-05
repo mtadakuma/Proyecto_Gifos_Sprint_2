@@ -1,8 +1,4 @@
 const cargarGif = (gif, tipo) =>{
-    let arrGifsFavs = [];
-    if(localStorage.getItem('favoritos') !== null){
-        arrGifsFavs = JSON.parse(localStorage.getItem('favoritos'));
-    }
 
     let arrMisGifos = [];
     if(localStorage.getItem('misGifos') !== null){

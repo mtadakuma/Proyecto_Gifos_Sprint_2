@@ -41,9 +41,7 @@ botonComenzar.addEventListener('click',()=>{
 function getStreamAndRecord () { 
     navigator.mediaDevices.getUserMedia({
         audio: false,
-        video: {
-            height: { max: 480 }
-        }
+        video: true
     }).then(function(stream) {
     crearPaso2.style.display = 'none';
     paso1.classList.remove('paso1');
@@ -59,8 +57,6 @@ function getStreamAndRecord () {
         type: 'gif',
         frameRate: 1,
         quality: 10,
-        width: 360,
-        hidden: 240,
         onGifRecordingStarted: function() {
         console.log('started')
     },
